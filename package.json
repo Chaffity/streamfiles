@@ -1,16 +1,32 @@
 {
+  "name": "streamfiles",
   "scripts": {
-    "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "parcel build index.html",
+    "lint": "eslint app",
+    "start": "parcel index.html"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "clean-webpack-plugin": "^2.0.2",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+  "eslintConfig": {
+    "extends": "@emphori"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaffity/streamfiles.git"
+  },
+  "author": "Iain Reid <iainreid382@gmail.com> (https://chaff.land)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chaffity/streamfiles/issues"
+  },
+  "homepage": "https://chaffity.github.io/streamfiles",
+  "dependencies": {
+    "@emphori/fui": "^0.0.18",
+    "@emphori/micro": "^1.0.0"
+  },
+  "devDependencies": {
+    "@emphori/eslint-config": "^0.1.4",
+    "eslint": "^6.3.0",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.6.4"
+  },
   "private": true
 }

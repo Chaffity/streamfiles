@@ -1,11 +1,7 @@
-gnore IDE generated files
-/.vscode
-
 # Ignore Node.js and NPM related paths
-/node_modules
+/node_modules/
 /npm-debug.log
 
-
-# Ignore dist files
-/dist
-
+# Ignore build output
+/.cache/
+/dist/

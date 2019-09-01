@@ -3,14 +3,22 @@ language: node_js
 node_js:
   - "lts/*"
 
+branches:
+  except:
+    - master
+
 script:
   - npm run build
 
 deploy:
-  provider: pages
-  github-token: $GITHUB_TOKEN
-  skip-cleanup: true
-  local-dir: dist
-  on:
-    branch: master
+  # Push the site to GitHub pages
+  - provider: pages
+    github-token: $GITHUB_TOKEN
+    skip-cleanup: true
+    local-dir: dist
+    target_branch: master
+    on:
+      branch: develop
 
+env:
+  - secure: A1MmR1A9d4VM5+CtCIZPhPFd4fZazewWVJSgQoM29Z6DEF4jPlBY0/EChBcTPlzYbO47YHfr6AljV+ivJtCGyTTzhDJCu7K21Uk1R6neLVbd91pscR1myP0MnUCxdAxboJDTguwmhPrMfrRw5dKliyfLk8J+IpYichaskxGA//22yk/rtelTiCG1XOWTJQsDWjxEc0qzWAPHOAxaLJkFoGNR6Vsz5aacIpqpkveBBm/TiC/RSVLj0jjI2p0asZUoZCT/VazsFez2Tg+zRC/N0+NU3w3f89QlyZtjv9LSGlCVdLo8In3rtHVkfLfWEVm12a6i6Mt3EhlTSLnYtA9n8R2F1dlBTsKaQ+ZzhwevoEOczgWWSoP1wxWcqj5ulUfgPppChYI9itWNwamtZLmeznSb/4p1CkY+xkyVzTkAz38iNuY3WKeV82q5tvA5XREEyPL3Sto1RE0A70jhg56T2IOys6D1xrEs5bElMlDJbloihUm6PvZoAt9wEdlpmb5/i5oCOoXInvc4DfNOUnVcB7MBh3ml00hhMW5Ccahbn7LxPjNtFruicakLABCgT1ftxvbBFkJF1KK/6H8ToM8oqn+Rvc3dB9b53LJk3T0Tr1MdSdCB+Lo5qvxPmGD602Nw5JE0+qkwt3P4ArC4Vp1hjZWLJo53vAdYG8sT4/hUe6I=
