@@ -4,7 +4,7 @@
   <a href="https://twitch.tv/chaffity">
     <img src="https://img.shields.io/badge/-twitch-6441a4.svg?style=for-the-badge&logo=twitch" />
   </a>
-  <a href="https://youtube.com/channel/UCPQ3VU2m5YUq0BwzdeXcM_A">
+  <a href="https://www.youtube.com/channel/UCt9nSHtTM4G6cDsWXWXH8QQ">
     <img src="https://img.shields.io/badge/-youtube-ff0000.svg?style=for-the-badge&logo=youtube" />
   </a>
   <a href="https://twitter.com/iainreid421">
