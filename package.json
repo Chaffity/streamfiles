@@ -1,7 +1,7 @@
 {
   "name": "streamfiles",
   "scripts": {
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --public-url ./",
     "lint": "eslint app",
     "start": "parcel index.html"
   },
